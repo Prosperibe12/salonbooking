@@ -179,10 +179,10 @@
                                                             $mail->SMTPAuth   = true;
                                         
                                                             //SMTP username
-                                                            $mail->Username   = 'Prosperibe12@gmail.com';
+                                                            $mail->Username   = '';
                                         
                                                             //SMTP password
-                                                            $mail->Password   = 'vgkbkwelakcuzikw';
+                                                            $mail->Password   = '';
                                         
                                                             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                                         
@@ -190,7 +190,7 @@
                                                             $mail->Port       = 465;
                                         
                                                             //Recipients
-                                                            $mail->setFrom('Prosperibe12@gmail.com');
+                                                            $mail->setFrom('');
                                                             $mail->addAddress($_SESSION['client_em']);
                                         
                                                             //Set email format to HTML

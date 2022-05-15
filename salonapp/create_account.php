@@ -86,10 +86,10 @@
                                     $mail->SMTPAuth   = true;
 
                                     //SMTP username
-                                    $mail->Username   = 'Prosperibe12@gmail.com';
+                                    $mail->Username   = '';
 
                                     //SMTP password
-                                    $mail->Password   = 'vgkbkwelakcuzikw';
+                                    $mail->Password   = '';
 
                                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
@@ -99,7 +99,7 @@
                                     $mail->CharSet = 'UTF-8';
 
                                     //Recipients
-                                    $mail->setFrom('Prosperibe12@gmail.com', 'SalonApp');
+                                    $mail->setFrom('', 'SalonApp');
                                     $mail->addAddress($_POST['email']);
 
                                     //Set email format to HTML

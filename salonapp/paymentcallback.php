@@ -49,10 +49,10 @@
                             $mail->SMTPAuth   = true;
         
                             //SMTP username
-                            $mail->Username   = 'Prosperibe12@gmail.com';
+                            $mail->Username   = '';
         
                             //SMTP password
-                            $mail->Password   = 'vgkbkwelakcuzikw';
+                            $mail->Password   = '';
         
                             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         
@@ -60,7 +60,7 @@
                             $mail->Port       = 465;
         
                             //Recipients
-                            $mail->setFrom('Prosperibe12@gmail.com');
+                            $mail->setFrom('');
 
                             foreach ($_SESSION['cart'] as $key => $value) {
                                 $mail->addAddress($value['salon_email']);
